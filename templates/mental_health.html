@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title></title>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='mental_health.css') }}">
+ <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> -->
+</head>
+<body>
+
+<header class="site-header clearfix">
+ <nav>
+  <div class="logo">
+   <h1>Mental health care</h1>
+  </div>
+  <div class="menu"> 
+   <ul>
+    <form action="/health_chat">
+        <li><button>Talk to our counselor</button></li>
+    </form>
+    
+
+   </ul>
+  </div>
+ </nav>
+ <section>
+  <div class="leftside"> 
+   <img src="{{ url_for('static',filename='bujji-removebg-preview.png') }}">
+  </div>
+  <div class="rightside"> 
+   <h1>Our Modern Website</h1>
+   <p>Mental helath plays a vital role do not neglect it. A sound mind dwells in a sound body</p>
+   <!-- <button>Welcome</button> --> 
+  </div>
+  
+ </section>
+
+</header>
+
+
+</body>
+</html>
+

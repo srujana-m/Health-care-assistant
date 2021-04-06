@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="choose.css"> -->
+        <link rel="stylesheet" href="{{ url_for('static',filename='chooseui.css') }}" />
+
+        <!-- <style>
+          .alert {
+            padding: 10px;
+            border-radius:25px;
+            background-color: #6CD96A;
+            color: black;
+            width: 40%;
+          }
+          
+          .closebtn {
+            margin-left: 5px;
+            color: black;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+
+          }
+          
+          .closebtn:hover {
+            color: black;
+          }
+          </style> -->
+      </head>
+<body>
+  <!-- <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <strong>{{msg}}!</strong>
+  </div> -->
+
+<section>
+    <h3>Our Services</h3>
+    <p class="section-lead">This is one stop destination for all your health related queries.You are just one click away from leading a better lifestyle .</p>
+    <div class="services-grid">
+      <div class="service service1">
+        <i class="ti-bar-chart"></i>
+        <img src="{{url_for('static', filename='food.jpeg')}}"/>
+        <h4>Nutritionist Advisory Section</h4>
+        <p>Eat healthy, be nutrition wealthy.</p>
+        <p>Get to know a Whole New Way to Take Your Vitamins. </p>
+        <a href="{{ url_for('land_func') }}" class="cta">Let's Go <span class="ti-angle-right"></a>
+      </div>
+  
+      <div class="service service2">
+        <i class="ti-light-bulb"></i>
+        <img src="{{url_for('static', filename='mind1.jpeg')}}"/>
+        <h4>Mental Health Advisory Section</h4>
+        <p>Mental health is preserved wealth.</p>
+        <p>Take a step today and talking today will help you lead a better tomorrow.</p>
+        <a href="{{ url_for('mental_func') }}" class="cta">Let's Go <span class="ti-angle-right"></a>
+      </div>
+  
+      <div class="service service3">
+        <i class="ti-money"></i>
+        <img src="{{url_for('static', filename='exercise.jpeg')}}"/>
+        <h4>More</h4>
+        <p>Exercise your mind and body.Start where you are. Use what you have. Do what you can.</p>
+        <p>The only bad workout is no workout.</p>
+        <a href="{{ url_for('workout_func') }}" class="cta">Let's Go <span class="ti-angle-right"></span></a>
+      </div>
+    </div>
+  </section>
+
+<div class="btn-group mt-2 mb-4" role="group" aria-label="actionButtons">
+	<!-- <a href="https://codepen-api-export-production.s3.us-west-2.amazonaws.com/zip/PEN/pyBNzX/1578778289271/pure-css-gradient-background-animation.zip" class="d-block btn btn-outline-light" download><i class="fas fa-file-download mr-2"></i>Download Source</a> -->
+	<!-- <a href="https://manuelpinto.in" target="_blank" class="d-block btn btn-outline-light">Visit my Website<i class="fas fa-external-link-square-alt ml-2"></i></a> -->
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4=" crossorigin="anonymous"></script>
+</body>
+</html>

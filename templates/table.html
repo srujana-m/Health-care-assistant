@@ -1,0 +1,157 @@
+<html>
+<head><title>DIET CHARTS TABLE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='table.css') }}">
+    <style>
+        div.sticky {
+          padding: 100px;
+          border-radius:25px;
+          width: 30%;
+          margin-top: 10px;
+          margin-left: 50px;
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+          padding: 5px;
+          background-color: #cae8ca;
+          border: 2px solid #4CAF50;
+        }
+        </style>
+</head>
+<body>
+    <img src="{{ url_for('static',filename='table.svg') }}" alt="diet table"> 
+    <div class="sticky">
+    <pre style="font-family:Verdana, Geneva, Tahoma, sans-serif">                    Your BMI value is : {{result}}</pre>
+    </div>
+<div class="table-box">
+        <div class="table-row table-head">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE</p>
+            </div>
+            <div class="table-cell">
+                <p>GENDER</p>
+            </div>
+            <div class="table-cell last-cell">
+                <p>GET MY DIET PLAN</p>
+            </div> 
+        </div>
+
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 15-18</p>
+            </div>
+            <div class="table-cell">
+                <p>FEMALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/99vHH_6F0Ko">GET MY PLAN</a>
+            </div>   
+        </div>
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 15-18</p>
+            </div>
+            <div class="table-cell">
+                <p>MALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/99vHH_6F0Ko">GET MY PLAN</a>
+            </div>   
+        </div>
+
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 18.5-24.9</p>
+            </div>
+            <div class="table-cell">
+                <p>FEMALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/v0IgI8vYD_o">GET MY PLAN </a>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 18.5-24.9</p>
+            </div>
+            <div class="table-cell">
+                <p>MALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/v0IgI8vYD_o">GET MY PLAN </a>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 25.0-29.9</p>
+            </div>
+            <div class="table-cell">
+                <p>FEMALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/4bPABX-jOko">GET MY PLAN</a>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 25.0-29.9</p>
+            </div>
+            <div class="table-cell">
+                <p>MALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/4bPABX-jOko">GET MY PLAN</a>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 30.0-34.9</p>
+            </div>
+            <div class="table-cell">
+                <p>FEMALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/qCFN8EujbGI">GET YOUR PLAN</a>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 30.0-34.9</p>
+            </div>
+            <div class="table-cell">
+                <p>MALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://youtu.be/qCFN8EujbGI">GET YOUR PLAN</a>
+            </div>
+        </div>
+
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 35.0-39.9</p>
+            </div>
+            <div class="table-cell">
+                <p>FEMALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://www.youtube.com/playlist?list=PLjwm_8O3suyPMWITFTSRKQ5vlJJMJyCXV">GET YOUR PLAN</a>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell first-cell">
+                <p>BMI RANGE 35.0-39.9</p>
+            </div>
+            <div class="table-cell">
+                <p>MALE</p>
+            </div>
+            <div class="table-cell last-cell">
+                <a href="https://www.youtube.com/playlist?list=PLjwm_8O3suyPMWITFTSRKQ5vlJJMJyCXV">GET YOUR PLAN</a>
+            </div>
+        </div>
+
+</div>   
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='to-do.css')}}">
+</head>
+<body>
+<div id="myDIV" class="header">
+  <h2>Workout Regime</h2>
+  <input type="text" id="myInput" placeholder="Title...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>Hit the gym-1hr</li>
+  <li class="checked">Meditation</li>
+  <li>Yoga-30min</li>
+  <li>pilates-5rep</li>
+  <li>jumping jacks-10sets</li>
+  <!-- <li></li> -->
+ </ul> 
+ <!-- <img src="{{url_for('static',filename='to-do.svg')}}" alt="to-do" width="800" height="600" style="float:right"> -->
+<script src="{{url_for('static',filename='to-do.js')}}"></script>
+</body>
+
+</html>

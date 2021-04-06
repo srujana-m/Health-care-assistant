@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>BMI Calculator</title>
+	</head>
+	<style media="screen">
+		body{
+			margin: 0px;
+			padding: 0;
+			text-align: center;
+			font-family: sans-serif;
+			background-image: linear-gradient(120deg,#aebae2, #609bc2);
+			min-height: 100vh;
+		}
+		div{
+			width: 500px;
+			position: absolute;
+			top: 50%;
+			left: 30%;
+			background-color: #fff;
+			transform: translate(-50%, -50%);
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 1px 1px 20px #4a79df;
+		}
+        img {
+        display: block;
+        margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+           height: 70%;
+           position: absolute;
+            top: 50px;
+            bottom: 150px;
+            left: 55%;
+    
+
+  }
+		h2{
+			font-size: 40px;
+			font-weight: 700;
+            font-family: 'Times New Roman', Times, serif;
+		}
+		.text{
+			text-align: left;
+			margin-left: 150px;
+		}
+		#w, #h{
+			color: #42a0df;
+			text-align: left;
+			font-size: 20px;
+			font-weight: 200;
+			outline: none;
+			border: none;
+			background: none;
+			border-bottom: 1px solid #624fb6;
+			width: 200px;
+		}
+			#w:focus, #h:focus{
+				border-bottom: 2px solid #5a43c4;
+				width: 300px;
+				transition: 0.5s;
+			}
+			#result{
+				color: #2a0ea5;
+			}
+			#btn{
+				font-family: inherit;
+				margin-top: 10px;
+				border: none;
+				color: #fff;
+				background-image: linear-gradient(120deg,#3b65c0, #e6e9f8);
+				width: 150px;
+				padding: 10px;
+				border-radius: 30px;
+				outline: none;
+				cursor: pointer;
+			}
+			#btn:hover{
+				box-shadow: 1px 1px 10px #735bdd;
+			}
+			#info{
+				font-size: 12px;
+				font-family: inherit;
+			}
+	</style>
+	<!-- <script type="text/javascript">
+		function BMI() {
+			var h=document.getElementById('h').value;
+			var w=document.getElementById('w').value;
+			var bmi=w/(h/100*h/100);
+			var bmio=(bmi.toFixed(3));
+			document.getElementById("result").innerHTML="Your BMI is= " + bmio;
+		}
+	</script> -->
+	<body>
+        <img src="{{url_for('static', filename='calculator.svg')}}" alt="calculator">
+		<div>
+			<form action="/diet_plan" class="sign-in-form" method="POST">
+			<h2>BMI Calculator</h2>
+			<p class="text">Height</p>
+			<input type="text" name='height'autocomplete="off" id="h">
+			<p class="text">Weight</p>
+			<input type="text" name = 'weight' autocomplete="off" id="w">
+			<p id="result"></p>
+			<!-- <button id="btn" onClick="BMI()">CALCULATE</button> -->
+			<input type="submit" id = "btn" autocomplete="off" value="calculate">
+			<p id="info"><h4> please enter height [cm] and weight [kg]</h4></p>
+		</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mental health</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='boxes.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="{{url_for('static',filename='articles.svg')}}">
+                    <h3 style="color: black;">Articles</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p></p>
+                        <a href="/Articles">Learn More</a>
+                        <!-- <br> -->
+                        <!-- <a href="#">Add Resources</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                  <img src="{{url_for('static',filename='meditation.svg')}}">
+                  <h3 style="color: black;">meditation</h3>
+                              </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p></p>
+                        <a href="/meditation">Learn More</a>
+                        <!-- <br> -->
+                        <!-- <a href="#">Add Resources</a> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                  <img src="{{url_for('static',filename='sleep.svg')}}">
+                  <h3 style="color: black;">Sleep</h3>
+              
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p></p>
+                        <a href="/sleep">learn More</a>
+                        <!-- <br> -->
+                        <!-- <a href="#">Add Resources</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                  <img src="{{url_for('static',filename='stress.jpg')}}">
+                  <h3 style="color: black;">stress</h3>
+              
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p></p>
+                        <a href="/stress_relief">Get Resources</a>
+                        <!-- <br> -->
+                        <!-- <a href="#">Add Resources</a> -->
+
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                  <img src="{{url_for('static',filename='mindfulness.jpg')}}">
+                  <h3 style="color: black;">mindfulness</h3>
+              
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p></p>
+                        <a href="/mindfulness">Get Resources</a>
+                        <!-- <br> -->
+                        <!-- <a href="#">Add Resources</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+      <svg viewBox="0 0 60 14">
+       <defs> 
+         <mask id="xxx">
+           <circle cx="7" cy="12" r="40" fill="#fff" />
+         </mask>
+         
+         <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="
+                 1 0 0 0 0  
+                 0 1 0 0 0  
+                 0 0 1 0 0  
+                 0 0 0 13 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+           <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+        </defs> 
+      
+         <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+         <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+       
+        
+        <g class="gooeff">
+        
+          <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" /> -->
+        
+          <!-- g mask="url(#xxx)">
+          <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+          </g>
+        </g -->
+      
+      <!-- </svg>
+      
+        
+      </footer>  -->
+
+</body>
+</html>
